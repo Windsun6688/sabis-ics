@@ -15,6 +15,13 @@ To use sabis-ics.py, follow these steps:
 - Run the program. It should generate a `SABIS.ics` file in the same directory.
 - Import `SABIS.ics` into any calendar client you prefer. Done and dusted.
 
+## Prerequisites
+### External Modules
+- `beautifulsoup4` - Tested on v4.11.1
+- `ics` - Tested on v0.7.2
+### Python Included Modules
+- `timezone`
+- `pytz`
 ## Known Limitations
 
 Due to the reliance on the external library `ics.py`, sabis-ics.py cannot generate repeating events. It will only try to generate one-week of events for now.
@@ -23,7 +30,7 @@ Due to the reliance on the external library `ics.py`, sabis-ics.py cannot genera
 
 ## Privacy Concerns
 
-This program will try to parse an exported html file of SDP, and which will require you to login.
+This program will try to parse an exported html file of SDP, which will require you to login.
 This program is:
 
 - Entirely local, no data transferred to external servers.
